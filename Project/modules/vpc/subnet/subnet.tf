@@ -28,7 +28,7 @@ resource "aws_subnet" "subnet_public_a" {
   availability_zone = "us-east-1a"
   map_public_ip_on_launch = true
   tags = {
-    Name = "${module.shared_vars.env_suffix}"
+    Name = "${module.shared_vars.env_suffix}-public-a"
   }
 }
 
@@ -38,7 +38,7 @@ resource "aws_subnet" "subnet_public_b" {
   availability_zone = "us-east-1b"
   map_public_ip_on_launch = true
   tags = {
-    Name = "${module.shared_vars.env_suffix}"
+    Name = "${module.shared_vars.env_suffix}-public-b"
   }
 }
 
